@@ -1,8 +1,12 @@
-import React, { Component } from "react";
+import React from 'react';
 
-export class NotificationMessage extends Component {
+export const NotificationMessage = ({ title }) => {
+  return <h4 title={title}>{title}</h4>;
+};
 
-    render() {
-        return <h4 title={this.props.title}>{this.props.title}</h4>
-    }
-}
+// export class NotificationMessage extends Component {
+
+//     render() {
+//         return <h4 title={this.props.title}>{this.props.title}</h4>
+//     }
+// }
