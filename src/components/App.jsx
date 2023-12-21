@@ -11,10 +11,7 @@ export const App = () => {
 
   const buttonType = ['good', 'neutral', 'bad'];
   const total = good + neutral + bad;
-  const countPositiveFeedbackPercentage = (
-    (good / (good + neutral + bad)) *
-    100
-  ).toFixed(2);
+  const countPositiveFeedbackPercentage = ((good / total) * 100).toFixed(2);
 
   const handleClick = e => {
     console.log(e.target.name);
